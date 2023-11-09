@@ -12,7 +12,7 @@ async function run() {
     const escaped = core.escapeData(whoToGreet)
     core.info(`Escaped:, ${escaped}!`)
     core.info(`Not escaped:, ${whoToGreet}!`)
-    
+
     // Get the current time and set as an output
     const time = new Date().toTimeString()
     core.setOutput('time', time)
