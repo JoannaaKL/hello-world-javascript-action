@@ -9645,7 +9645,7 @@ async function run() {
   try {
     // The `who-to-greet` input is defined in action metadata file
     const whoToGreet = core.getInput('who-to-greet', { required: true })
-    const escaped = core.escapeData(whoToGreet)
+    const escaped = core.escapeData('${whoToGreet}')
     core.info(`Escaped:, ${escaped}!`)
     core.info(`Not escaped:, ${whoToGreet}!`)
 
